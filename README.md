@@ -8,8 +8,8 @@ In this application, you require implementing three C programs, namely Client, P
   ![image](https://user-images.githubusercontent.com/29946239/129192576-70cbb45a-8d3a-43de-8c97-97e14c60aa77.png)
 
 ### Prototypes for Client and Server
-  Client -> executable code   Server IP Address   Server Port number <br />
-  Server -> executable code  Server Port number
+  Client -> executable-code   Server-IP-Address   Server-Port-number <br />
+  Server -> executable-code  Server-Port-number
 
 <br />
 
