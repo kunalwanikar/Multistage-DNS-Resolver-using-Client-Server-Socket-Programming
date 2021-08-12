@@ -13,7 +13,7 @@ In this application, you require implementing three C programs, namely Client, P
 
 <br />
 
-## Details
+## Solution Details
 
 1. Request message is of two types.(Type1 & Type 2)
 	a. Type 1 Message field specifies the Domain Name and requests for the IP address corresponding to the Domain name.
@@ -111,7 +111,7 @@ If the proxy cache contains an entry corresponding to the requested domain name/
 If the proxy cache doesn't contain an entry corresponding to the requested domain name/IP address, then the proxy server will forward the request message to the DNS-server which is located at the Address 127.0.0.1 and serving at the port 8080. After establishing a connection with the DNS server, the proxy server will now forward the request to the DNS server, which will check if there is an entry corresponding to the request. If there doesn't exist any entry, the DNS server sends a message to the proxy server saying that it can't service the request, which the proxy server will forward to the client program.In this case a response message of Type-4 is send back to the proxy server, which will eventually forward it to the client.
 
 If a corresponding entry exists, the DNS server will send the required data to the proxy server, which will now update its proxy cache using the FIFO algorithm, and then it forwards the data to the client program.
-We have implemented the proxy cache and the DNS database as text programs with the names proxyCache and dnsCache.txt
+We have implemented the proxy cache and the DNS database as text programs with the names proxyCache and dnsCache.txt<br />
 /---------------------------------------------------------------------------------------------------------------------------------
 
 
