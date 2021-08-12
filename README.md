@@ -12,6 +12,7 @@ In this application, you require implementing three C programs, namely Client, P
   Server -> executable code  Server Port number
 
 <br />
+
 ## Details
 
 1. Request message is of two types.(Type1 & Type 2)
@@ -53,24 +54,24 @@ This command will binds the port number 8080 to the dns server, and 9999 to the 
 
 ## EXAMPLES:
 
-Example 1 to run the code on the client side: 
+Example 1) To run the code on the client side: 
 After running ./client 127.0.0.1 9999, the client will ask for type of message and hostname/IP. Suppose we need to find the IP address of kunal.com from then follow the below steps.
 
-step1) Open terminal and run gcc -o dns dns.c
-step2) ./dns 8080
-step3) Open new terminal and run gcc -o proxy proxy.c
-step4) ./proxy 9999
-step5) Open new terminal and run gcc -o client client.c
-step6)./client 127.0.0.1 9999
-This will output the following
-127.0.0.1	9999
-Socket Creation Successful
-Establishing connection with the server Successful
-Requesting input: request and type of request
-step7) type1 kunal.com
-Request Message to server: 0kunal.com
-Response from server: 1.2.3.4
-The requested data: 1.2.3.4
+step1) Open terminal and run gcc -o dns dns.c <br />
+step2) ./dns 8080 <br />
+step3) Open new terminal and run gcc -o proxy proxy.c <br />
+step4) ./proxy 9999 <br />
+step5) Open new terminal and run gcc -o client client.c<br />
+step6)./client 127.0.0.1 9999<br />
+This will output the following<br />
+127.0.0.1	9999<br />
+Socket Creation Successful<br />
+Establishing connection with the server Successful<br />
+Requesting input: request and type of request<br />
+step7) type1 kunal.com<br />
+Request Message to server: 0kunal.com<br />
+Response from server: 1.2.3.4<br />
+The requested data: 1.2.3.4<br />
 
 
 Example 2) Suppose we need to find the Hostname of 1.2.3.4 from then follow the below steps.
